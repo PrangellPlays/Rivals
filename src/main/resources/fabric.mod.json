@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "rivals",
+	"version": "${version}",
+	"name": "Rivals",
+	"description": "Marvel Rivals in Minecraft",
+	"authors": [
+		"PrangellPlays"
+	],
+	"contributors": [
+		"Marvel Rivals"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/rivals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.prangellplays.rivals.Rivals"
+		],
+		"client": [
+			"dev.prangellplays.rivals.RivalsClient"
+		],
+		"fabric-datagen": [
+			"dev.prangellplays.rivals.RivalsDataGenerator"
+		]
+	},
+	"mixins": [
+		"rivals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
